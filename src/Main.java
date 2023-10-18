@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Hur många poäng fick du på provet?");
         int points = tgb.nextInt();
         tgb.nextLine();
-        if (points <= 30) {
+        if (points >= 0 && points <= 30) {
             if (points < 15) {
                 answer = ("Du fick betyget F");
             } else if (points > 14 && points < 18 ){
